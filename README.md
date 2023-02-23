@@ -15,6 +15,11 @@ For example, to spend 5000 points, the command would be:
 ```python3
 mycode.py 5000 transactions.csv
 ```
+
+# testsuit
+test_spend_point.py is a test file. Type to run. There are three test cases one is fail and two are success.
+```python3 test_spend_points.py```
+
 # Input Format
 The input is a CSV file containing the transactions data. The file should have the following format:
 

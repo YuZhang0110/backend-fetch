@@ -3,7 +3,7 @@ import sys
 from collections import defaultdict
 from typing import Dict, List, Tuple
 
-def spend_points(points2Spend: int, transactionsFile: str) -> Dict[str, int]:
+def spendPoints(points2Spend: int, transactionsFile: str) -> Dict[str, int]:
     payerPoints = defaultdict(int)
     transactions = readTransactionsFromFile(transactionsFile)
     transactions = sortTransactionsByTimestamp(transactions)
@@ -37,5 +37,5 @@ def sortTransactionsByTimestamp(transactions: List[Tuple[str, int, str]]) -> Lis
 if __name__ == '__main__':
     points2Spend = int(sys.argv[1])
     transactionsFile = sys.argv[2]
-    result = spend_points(points2Spend, transactionsFile)
+    result = spendPoints(points2Spend, transactionsFile)
     print(result)
