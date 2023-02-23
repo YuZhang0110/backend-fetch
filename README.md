@@ -16,8 +16,8 @@ For example, to spend 5000 points, the command would be:
 mycode.py 5000 transactions.csv
 ```
 
-# testsuit
-test_spend_point.py is a test file. Type to run. There are three test cases one is fail and two are success. Run this command to test:
+# Testsuit
+"test_spend_point.py" is a test file. There are three test cases one is fail and another two are success. Run this command to test:
 ```
 python3 test_spend_points.py
 ```
