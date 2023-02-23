@@ -1,0 +1,69 @@
+1.Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+    1.1 The reason I choose the csv,sys,defaultdict, Dict, List and Tuple is these libraries are the The libraries that comes with python.SO you just need to install python and don't need install any other additional libraries. And for dealing with the csv file, the csv library is a widely used file format for storing and exchanging data. In this case, we use the csv library to read the transactions data from a CSV file, as the transactions data is stored in this format. The csv library provides a convenient and efficient way to parse and process the data in a CSV file, making it easy to extract the information we need. Additionally, the csv library provides a number of features that make it easy to handle different variations of the CSV format, such as different delimiters, quote characters, and escape characters.
+
+    1.2 Assuming the reviewer has not executed code in my language, python is the simplest.There are several advantages of using Python for this programm:
+
+        Easy to learn and use: Python has a simple and straightforward syntax, making it easy to learn and use, even for those with little or no programming experience.
+
+        Cross-platform compatibility: Python is compatible with multiple platforms, including Windows, macOS, and Linux, making it a great choice for developing cross-platform applications.
+
+        High-level programming language: Python is a high-level programming language, which means that it provides a higher level of abstraction from the underlying hardware than low-level languages like C or Assembly. This makes it easier to write and maintain complex programs.
+
+        Dynamic typing: Python uses dynamic typing, which allows variables to change type at runtime. This makes it easier to write flexible and robust code, as it reduces the need for explicit type definitions.
+
+        Interpreted language: Python is an interpreted language, which means that it can be executed line by line, rather than having to be compiled first. This makes it easier to test and debug code, as well as making it more interactive.
+
+
+2. What are the advantages and disadvantages of your solution?
+    2.1 There are several advantages of this code:
+
+        Easy to understand: The code uses a straightforward approach to spend the points and keeps track of the payer point balances, making it easy to understand and debug.
+
+        Modular design: The code is separated into several functions, each with a clear and well-defined purpose. This makes the code more maintainable and easier to test, as well as making it easier to reuse parts of the code in other projects.
+
+        Efficient use of data structures: The code uses a defaultdict from the collections module to keep track of the payer point balances, which is an efficient and convenient data structure for this purpose.
+
+        Robust error handling: The code handles the case where a payer's points go negative and ensures that the total number of points to spend is not exceeded.
+
+        Flexible input format: The code reads the transactions data from a CSV file, which is a flexible and widely used file format. This makes it easy to use the code with different data sources.
+
+        Clear and concise: The code uses clear and concise variable and function names, making it easy to read and understand.
+
+        Type annotations: The code uses type annotations to clearly specify the types of the variables and function parameters, making it easier to catch type-related errors and making the code more readable.
+    2.2 While this code provides a solution to the problem, there are a few potential disadvantages:
+
+        Limited error handling: Because of the limited information of the problem, the code does not check for errors related to the input file, such as missing or corrupted data, or missing or incorrect file format. And there are several corner cases. For example how to handle the case when the total points is not enough.
+
+        Missing multi threads protect: This code does not include any multi-threading protection, which could cause issues if multiple threads try to access and modify the payer point balances at the same time. In a multi-threaded environment, it is important to ensure that the data is protected from race conditions and other synchronization issues.
+
+        Fixed input format: The code assumes that the transactions data is stored in a specific format (CSV file), and may not be easily adaptable to other input formats.
+
+        Limited reporting: The code only returns the payer point balances after the points are spent, and does not provide any other reporting or analysis of the transactions data.
+
+        No unit tests: The code does not include any unit tests, which could make it more difficult to verify the correctness of the code and to maintain it over time.
+
+        No performance optimization: The code does not perform any optimization to minimize the time and memory required to spend the points. This could be an issue if the transactions data is very large.
+
+        No security considerations: The code does not address any security considerations, such as protection against malicious data inputs or unauthorized access to the transactions data.
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+
+    One example is designing a big data system which is a real-time streaming data processing platform. In this project, a large amount of data is generated and collected from various sources in real-time, such as sensors, web logs, or social media. The goal of the project is to process this data in real-time and extract valuable insights from it.
+
+    This type of project typically involves the use of big data technologies, such as Apache Kafka for data ingestion, Apache Spark for data processing, and Apache Cassandra or Apache HBase for data storage. The system should be able to handle high volumes of incoming data and process it quickly and efficiently, while also being able to scale horizontally as needed.
+
+    there are many challenges during this project:
+    Data variability: One of the biggest challenges in a big data system project is dealing with the variability of the data. The data may come from multiple sources and may have different formats, structures, and levels of quality. To overcome this challenge, it is important to have robust data validation and cleansing mechanisms in place to ensure the data is processed correctly and consistently.
+
+    Real-time processing: Another challenge is handling real-time processing requirements. The data needs to be processed quickly and efficiently in real-time, which requires a scalable and efficient processing architecture. To overcome this challenge, it is important to choose a data processing framework that is optimized for real-time processing, such as Apache Spark, and to design the system to handle the variability of the data.
+
+    Data storage and retrieval: Storing and retrieving large amounts of data can be a challenge, especially when the data needs to be accessed quickly and efficiently. To overcome this challenge, it is important to choose a data storage solution that is optimized for big data, such as Apache Cassandra or Apache HBase, and to design the system to store the data in a way that is optimized for fast retrieval.
+
+    Data analysis: Analyzing large amounts of data can be a challenge, especially when the data needs to be analyzed quickly and efficiently. To overcome this challenge, it is important to choose data analysis tools that are optimized for big data, such as Apache Pig, Apache Hive, or Apache Impala, and to design the system to support fast and efficient querying of data.
+
+    Data visualization: Visualizing large amounts of data can be a challenge, especially when the data needs to be visualized in a way that is easy to understand and communicate. To overcome this challenge, it is important to choose data visualization tools that are optimized for big data, such as Tableau or PowerBI, and to design the system to support interactive and customizable visualizations.
+
+    Monitoring and maintenance: Monitoring and maintaining a big data system can be a challenge, especially as the system grows and becomes more complex. To overcome this challenge, it is important to choose monitoring tools that are optimized for big data, such as Apache Ambari or Apache Zookeeper, and to design the system to support effective monitoring and maintenance.
+
+    In conclusion, overcoming the challenges in a big data system project requires a strong understanding of the technologies and best practices in the big data space, as well as careful planning and design of the architecture. By choosing the right technologies and tools for each step of the process and designing the system with robust error handling and data validation mechanisms, it is possible to overcome these challenges and build a successful big data system.
